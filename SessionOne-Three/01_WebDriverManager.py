@@ -7,6 +7,6 @@ driver = webdriver.Chrome(executable_path=ChromeDriverManager().install())  # Wi
 
 driver.get("http://google.com")
 sleep(2)
-driver.find_element('name', 'q').send_keys("Wikipedia")
+driver.find_element('name', 'q').send_keys("yahoo")
 sleep(3)
 driver.quit()  # TearDown
