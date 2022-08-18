@@ -9,7 +9,7 @@ driver.get("http://wikipedia.com")
 el1 = driver.find_element('id', 'searchInput')
 el1.send_keys("Hello world!")
 sleep(1)
-
+#
 # 2 > Xpath
 # Absolute
 driver.find_element('xpath', '/html/body/div[3]/form/fieldset/div/input')
