@@ -9,17 +9,18 @@ driver.get("http://wikipedia.com")
 # 1 > ID
 el1 = driver.find_element('id', 'searchInput')
 el1.send_keys("Hello world!")
-sleep(1)
+el1.click()
+sleep(20)
 #
 # 2 > Xpath
 #٫ Absolute
-el2 = driver.find_element('xpath', '/html/body/div[3]/form/fieldset/div/input')
-print(el1)
-print(el2)
-assert el1 == el2
+#el2 = driver.find_element('xpath', '/html/body/div[3]/form/fieldset/div/input')
+#print(el1)
+#print(el2)
+#assert el1 == el2
 # Relative
 #driver.find_element('xpath', "//input[@type='search']")
-driver.find_element('xpath', "//*[text()='Italiano']")
+#driver.find_element('xpath', "//*[text()='Italiano']")
 
 
 # 3 > Tag
