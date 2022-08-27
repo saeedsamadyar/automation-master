@@ -15,7 +15,6 @@ search_box = driver.find_element('name', 'q')
 
 ## Type
 search_box.send_keys("Selenium")
-
 # Type + ENTER
 search_box.send_keys("selenium" + Keys.ENTER)
 
