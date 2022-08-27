@@ -13,7 +13,7 @@ driver.maximize_window()
 driver.get("http://google.com")
 search_box = driver.find_element('name', 'q')
 
-# Type
+## Type
 search_box.send_keys("Selenium")
 
 # Type + ENTER
