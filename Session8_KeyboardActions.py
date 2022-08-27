@@ -15,21 +15,23 @@ search_box = driver.find_element('name', 'q')
 
 ## Type
 search_box.send_keys("Selenium")
+
+sleep(10)
 # Type + ENTER
-search_box.send_keys("selenium" + Keys.ENTER)
+search_box.send_keys("Selenium" + Keys.ENTER)
 
 # Select All (key_down)
-actions.key_down(Keys.CONTROL).send_keys('a').perform()
+#actions.key_down(Keys.CONTROL).send_ keys('a').perform()
 
 # Holding Shift + type
-actions.key_down(Keys.SHIFT).send_keys_to_element(search_box, 'selenium').perform()
+#actions.key_down(Keys.SHIFT).send_keys_to_element(search_box, 'selenium').perform()
 
 # key_up()
-actions.key_down(Keys.SHIFT).send_keys_to_element(search_box, 'selenium').key_up(Keys.SHIFT).send_keys(" selenium").perform()
+#actions.key_down(Keys.SHIFT).send_keys_to_element(search_box, 'selenium').key_up(Keys.SHIFT).send_keys(" selenium").perform()
 
 # Clear field using clear()
-search_box.clear()
+#search_box.clear()
 
 # Clear field using CTRL+A+Del
-search_box.click()
-actions.key_down(Keys.CONTROL).send_keys('a').send_keys(Keys.DELETE).perform()
+#search_box.click()
+#actions.key_down(Keys.CONTROL).send_keys('a').send_keys(Keys.DELETE).perform()
